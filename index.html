@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lieux hitoriques de la ville de Québec</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <link rel="stylesheet" href="/switchbasmap/L.switchBasemap.css"/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+     <script src="/switchbasmap/L.switchBasemap.js"></script>
+
+
+     <link rel="stylesheet" href="/Leaflet.Legend-master/src/leaflet.legend.css">
+     <script src="/Leaflet.Legend-master/src/leaflet.legend.js"></script>
+    
+</head>
+<body>
+    <header id="titre">
+        <ul>
+            <li><a href = "https://www.cegeplimoilou.ca/" id = "logo"><img  src="images/cegep.png" height="74"></a></li>
+            <li><a class="active" href="#navigation">Accueil</a></li>
+            <li><a href="#carte">Carte</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+        <p id="navigation"><br>Les lieux hitoriques de la Ville de Québec</p>
+    <main id="contenu">Choix des lieux
+        <section  id ="section" ><a id = "ref" href="evaluation.html">Évaluations des lieux</a></section>
+        <section id="section" ><a id = "ref" href="description.html">Descriptions des lieux</a></section>
+    </main>
+    <aside>Lieux recommandés
+        <br>
+        <br>
+        <a href="recommandation.html">
+            <button class="button" style="vertical-align:middle"><span>Voir </span></button>
+        </a>
+    </aside>
+    <div id = "TitreCarte">Carte des lieux historiques</div>
+    <div id ="carte">
+        <script src="script.js"></script>
+    </div>
+    <div id ="information">
+        <p id="TitreInfo">Information</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras felis nulla, facilisis et scelerisque id, dictum vitae sapien. Morbi consequat a risus et consequat. Sed turpis diam, dictum eu urna sit amet, faucibus vehicula justo. Suspendisse dictum felis vitae malesuada eleifend. Quisque a leo hendrerit, suscipit enim id, tincidunt felis. Aliquam mi erat, gravida et tortor convallis, gravida varius augue. Aliquam rhoncus, ante in commodo mollis, tortor magna bibendum ex, sed consequat leo diam et orci. Phasellus nunc mi, lobortis ultricies hendrerit eu, convallis at velit. Nam neque nisl, hendrerit vitae lectus porta, vestibulum blandit erat. Nullam vel nulla eu nunc varius consequat sed at turpis. Donec a nisi facilisis, malesuada turpis ut, scelerisque augue. Nunc quis lorem auctor, imperdiet felis luctus, laoreet nulla. Nulla egestas, lorem quis eleifend semper, magna mi rhoncus massa, et tempus turpis nibh sit amet ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            Donec faucibus est nulla, eget pretium dolor porta vitae. Maecenas vel hendrerit urna. Phasellus a ultrices lacus. Pellentesque ipsum tellus, ullamcorper in diam nec, volutpat vulputate mauris. Maecenas ex metus, porttitor nec ante vel, accumsan placerat magna. Integer sed eleifend metus. In lacinia diam elementum nisl auctor, vitae convallis libero porttitor.
+            
+            Maecenas mattis augue orci, vitae interdum lorem dictum eget. Ut eu tincidunt urna. Donec consequat quam sit amet purus sagittis porta. Suspendisse eleifend semper libero, ut accumsan leo bibendum vel. Praesent pharetra elementum augue, eu sagittis tortor tempor nec. Nulla vitae pretium mi. Praesent lorem ante, feugiat ut leo vel, consequat tincidunt purus.
+            
+            Mauris rhoncus posuere auctor. Nulla euismod dolor non arcu tempor consectetur. Etiam at placerat dui. Vestibulum dignissim lorem vel vehicula vestibulum. Phasellus quis ex posuere, fermentum felis vel, semper nunc. Integer eu erat sit amet nisi scelerisque mollis. Donec ac aliquet metus. Suspendisse quis justo in elit accumsan rutrum nec vitae lectus. Etiam mattis, enim ac pharetra malesuada, urna mauris pretium massa, in interdum enim lectus ultrices nibh. Suspendisse potenti. Maecenas sit amet vulputate nisl. In ut enim elit. Nullam ex magna, ullamcorper at congue quis, eleifend non nibh. Etiam ac lectus sit amet libero consequat venenatis. Nunc felis mi, posuere eget lacus sit amet, pharetra congue erat. Fusce in odio eu neque semper laoreet.
+            
+            Mauris sagittis maximus ligula ac vehicula. Morbi eu ultricies orci, eget hendrerit tortor. Aenean molestie nisl a ipsum consectetur, ac porta nisi placerat. Vestibulum id metus et lacus bibendum posuere. Praesent nec ullamcorper nisi. Aenean sed turpis ligula. Aenean urna nisi, consequat in mi at, facilisis vulputate lectus. Vestibulum quis nisl et tortor porta maximus. Nullam malesuada tristique magna. Aliquam consectetur elit quis dui ultricies vehicula. Maecenas ullamcorper vulputate est, rutrum dapibus magna tempor quis.
+        </p>
+        <br>
+        <p>
+            In faucibus turpis ut purus congue, non lobortis tellus finibus. Praesent consequat arcu lectus. Donec feugiat id justo ac ultrices. Nunc quis est lobortis, congue lorem a, dignissim orci. Nam a hendrerit justo, eu pellentesque sapien. Morbi congue arcu risus, sed pharetra risus interdum et. Aliquam vehicula ornare sem quis commodo. Praesent condimentum luctus elit, in scelerisque mi tempus vitae. Nunc in tempus ex. Maecenas vitae ante feugiat, posuere dolor eget, pharetra tellus. Proin vehicula, enim feugiat semper vestibulum, nisi urna euismod ex, sed sollicitudin lectus dolor nec est. Integer a ante odio. Sed non magna pharetra, ullamcorper orci ac, tincidunt neque. Fusce rutrum aliquam viverra.
+            
+            Vestibulum eu bibendum eros, nec posuere sapien. Nullam posuere finibus pharetra. Ut ut neque magna. In luctus mauris dui, vel posuere nibh finibus a. Aliquam ipsum velit, scelerisque nec rhoncus sed, placerat et elit. Maecenas nec aliquam nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            
+            Morbi odio lacus, ornare vel ex sit amet, tincidunt ultricies enim. Duis elit ex, consequat nec augue at, malesuada eleifend ipsum. Mauris a efficitur quam, nec imperdiet tellus. Nulla sollicitudin, risus id feugiat lacinia, diam massa mattis erat, et porttitor nulla nisi sit amet ligula. Etiam nec posuere erat. Quisque enim justo, semper consequat aliquet vulputate, ultricies non nulla. Sed non pellentesque enim, maximus commodo ligula. Mauris aliquet tincidunt felis vel egestas. Praesent sed quam est. Pellentesque convallis, nulla malesuada interdum blandit, enim massa posuere lectus, et blandit est ex nec massa. Sed nisl tortor, convallis nec magna ut, suscipit interdum lorem. In venenatis nec turpis vel pharetra. Proin tempus sem ut leo varius sollicitudin.
+            
+            Nullam at nulla vel ligula dapibus interdum vitae vel risus. Donec ultricies et augue a tempor. Nullam porta tincidunt feugiat. Nullam aliquam ut metus at bibendum. Aliquam gravida, dui sed scelerisque porta, nisl lorem facilisis velit, sit amet iaculis tortor sapien in nibh. Phasellus dapibus suscipit semper. Proin at dolor eget ex feugiat pharetra. Integer accumsan ac velit vitae gravida.
+            
+            Suspendisse at justo eu velit finibus facilisis. Morbi lacinia pulvinar sodales. Duis finibus, nisl id malesuada sollicitudin, sem sapien mollis velit, ac efficitur est augue eu odio. Fusce molestie ante magna, vitae cursus tortor semper tempus. Etiam mollis neque non posuere luctus. Proin finibus vulputate bibendum. Aenean sit amet purus quis nulla lacinia suscipit. Nulla pretium tempus metus, vitae eleifend arcu tincidunt et. Phasellus quis quam eget nulla maximus molestie quis non enim.
+        </p>
+
+    </div>
+    <div id ="contact">
+        <p id="TitreInfo">Contact</p>
+        <br>
+        <br>
+        <li>Courriel: 2165469@cegeplimoilou.ca</li>
+        <br>
+        <br>
+        <li>Téléphone: 418-666-6666</li>
+        <br>
+        <br>
+        <li>Télécopieur: 418-999-9999</li>
+        <br>
+        <br>
+        <li>Adresse: 1300 8e Ave, Québec City, Quebec G1J 5L5</li>
+        <img id="image" src="images/1re_avenue_Charlesbourg.jpg" style="width:50%">
+        <p></p>
+        
+        <script>
+            var imageSources = ["images/Chateau_Frontenac.jpg", "images/petit_champlain.jpg", "images/mur_des_fortifications.jpg", "images/2014-08-28-Quebec-City-skyline-from-Île-dOrléans.jpg","images/1re_avenue_Charlesbourg.jpg"]
+            var index = 0;
+            setInterval (function(){
+                if (index === imageSources.length) {
+                    index = 0;
+                }
+                document.getElementById("image").src = imageSources[index];
+                index++;
+            } , 5000);
+
+         </script>
+    </div>
+    <!-- <div class="legend" ></div> -->
+    <footer>Créé par: Mathieu Beauséjour</footer>
+</body>
+
+</html>
